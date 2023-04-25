@@ -8,8 +8,8 @@ export default function CardList(props) {
   useEffect(() => {
     const token = localStorage.getItem("token");
     console.log(token)
-    // fetch("http://localhost:5000/api/job/getjobs")
-    axios.get("http://localhost:5000/api/job/getjobs",{
+    // fetch("https://gratisagency.onrender.com/api/job/getjobs")
+    axios.get("https://gratisagency.onrender.com/api/job/getjobs",{
       headers: {'x-auth-token': token}
     })
       .then((res) => {

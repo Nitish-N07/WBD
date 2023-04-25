@@ -17,7 +17,7 @@ if(localStorage.token){
 }
 
 try{
-    const res=await axios.get('http://localhost:5000/api/auth');
+    const res=await axios.get('https://gratisagency.onrender.com/api/auth');
     dispatch({
         type:USER_LOADED,
         payload:res.data
@@ -42,7 +42,7 @@ export const register=(
     const body=JSON.stringify({username,email,password});
     try{
         console.log(body);
-        const res=await axios.post('http://localhost:5000/api/users',username,config);
+        const res=await axios.post('https://gratisagency.onrender.com/api/users',username,config);
         dispatch({
             type:REGISTER_SUCCESS,
             payload:res.data
@@ -76,7 +76,7 @@ export const login=(
     const body=JSON.stringify({email,password});
     try{
         console.log(body);
-        const res=await axios.post('http://localhost:5000/api/auth',body,config);
+        const res=await axios.post('https://gratisagency.onrender.com/api/auth',body,config);
         dispatch({
             type:LOGIN_SUCCESS,
             payload:res.data

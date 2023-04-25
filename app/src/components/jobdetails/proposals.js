@@ -7,7 +7,7 @@ export default function Proposals(props ) {
     const [ProposalData, setProposalData] = React.useState({});
     useEffect(() => {
         // console.log(job_id)
-        axios.get(`http://localhost:5000/api/proposal/getproposal/${props.proposal}`).then(
+        axios.get(`https://gratisagency.onrender.com/api/proposal/getproposal/${props.proposal}`).then(
             (res)=>{
                 // console.log(res.data)
                 setProposalData(res.data);

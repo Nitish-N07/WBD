@@ -18,10 +18,10 @@ export default function Bid(props) {
         }
 
 
-        axios.post("http://localhost:5000/api/proposal/addproposal",bid).then((res,error)=>{
+        axios.post("https://gratisagency.onrender.com/api/proposal/addproposal",bid).then((res,error)=>{
             console.log(res.data)
             // console.log("thisdsda")
-            // axios.post("http://localhost:5000/api/job/updatejob",{jobid:props.jobId,proposal:res.data._id}).then((res)=>{
+            // axios.post("https://gratisagency.onrender.com/api/job/updatejob",{jobid:props.jobId,proposal:res.data._id}).then((res)=>{
             //     console.log(res.data)
             //     })
         })

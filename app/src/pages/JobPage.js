@@ -18,7 +18,7 @@ function JobPage(props){
     const [JobData, setJobData] = React.useState({});
     useEffect(() => {
         // console.log(job_id)
-        axios.get(`http://localhost:5000/api/job/getjob/${job_id}`).then(
+        axios.get(`https://gratisagency.onrender.com/api/job/getjob/${job_id}`).then(
             (res)=>{
                 console.log(res.data)
                 setJobData(res.data);

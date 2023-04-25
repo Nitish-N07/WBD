@@ -39,7 +39,7 @@ function EditAvatar({ auth: { user } }) {
     e.preventDefault();
     const formData = new FormData();
     formData.append('avatar', avatarFile);
-    await fetch(`http://localhost:5000/api/profile/avatar/${user._id}`, {
+    await fetch(`https://gratisagency.onrender.com/api/profile/avatar/${user._id}`, {
       method: 'PUT',
       body: formData,
     })

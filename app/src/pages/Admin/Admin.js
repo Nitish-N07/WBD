@@ -11,7 +11,7 @@ const AdminPage = ({ auth: { isAuthenticated }, setAlert, logout }) => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/profile/users');
+      const response = await fetch('https://gratisagency.onrender.com/api/profile/users');
       const data = await response.json();
       setUserList(data);
     } catch (error) {
@@ -22,7 +22,7 @@ const AdminPage = ({ auth: { isAuthenticated }, setAlert, logout }) => {
   const deleteUser = async (userId) => {
     try {
       console.log(userId);
-      await fetch(`http://localhost:5000/api/profile/users/${userId}`,{
+      await fetch(`https://gratisagency.onrender.com/api/profile/users/${userId}`,{
         method: 'DELETE',
       });
       setUserList(userList.filter((user) => user.id !== userId));

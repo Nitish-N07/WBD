@@ -46,7 +46,7 @@ export default function AddJob() {
         // setIsSubmit(true);
         if (Object.keys(dataErrors).length === 0) {
             // let user = axios.get("https://localhost:5000/api/")
-            axios.post("http://localhost:5000/api/job/addjob", data);
+            axios.post("https://gratisagency.onrender.com/api/job/addjob", data);
             // alert("Job added successfully ");
             setData(init);
             Swal.fire(

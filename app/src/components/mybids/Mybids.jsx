@@ -43,8 +43,8 @@ function Mybids() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     console.log(token)
-    // fetch("http://localhost:5000/api/job/getjobs")
-    axios.get("http://localhost:5000/api/proposal/getproposals",{
+    // fetch("https://gratisagency.onrender.com/api/job/getjobs")
+    axios.get("https://gratisagency.onrender.com/api/proposal/getproposals",{
       headers: {'x-auth-token': token}
     })
       .then((res) => {

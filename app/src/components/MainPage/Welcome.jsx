@@ -9,7 +9,7 @@ const Welcome = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    const user = axios.get("http://localhost:5000/api/auth/",{
+    const user = axios.get("https://gratisagency.onrender.com/api/auth/",{
       headers: {'x-auth-token': token}
     })
       .then((res) => {

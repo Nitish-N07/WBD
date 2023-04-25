@@ -49,7 +49,7 @@ const Register = ({setAlert,register,isAuthenticated}) => {
 
       //     }}
       //     const body=JSON.stringify(formData);
-          // const res=await axios.post('http://localhost:5000/api/users',body,config).then(response => {
+          // const res=await axios.post('https://gratisagency.onrender.com/api/users',body,config).then(response => {
           //   if (!response.ok) {
           //     throw new Error(response.statusText);
           //   }

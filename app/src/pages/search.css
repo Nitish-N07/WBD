@@ -1,15 +1,15 @@
-  /*description job*/
+
   .page-wrapper2{
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
   
-    /* Resize the wrap to see the search bar change! */
+
   .wrap{
     width: 100%;
   }
 
-  /* search page*/
+
   .search {
     width: 100%;
     position: relative;
@@ -128,7 +128,7 @@
     }
   }
   
-  .resultstext  */
+
   .block{
     margin-top: 2% ;
   }

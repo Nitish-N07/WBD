@@ -22,6 +22,7 @@ connectDB();
 //set port to 5000
 const PORT=process.env.PORT || 5000;
 
+app.use(express.static("public"));
 //use body parser middleware
 app.use(express.json({extended:false}));
 app.use(cors())

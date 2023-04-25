@@ -8,9 +8,7 @@
   padding-left: 20px;
   padding-top: 20px;
 }
-/* .homeSlide .box {
-   height: 320px;
-} */
+
 .homeSlide p {
   margin: 20px 0;
   padding-left: 20px;
@@ -24,10 +22,7 @@
   border-radius: 50%;
   padding: 10px;
 }
-/* .homeSlide ul li button {
-  background: transparent !important;
-  color: transparent !important;
-} */
+
 .homeSlide ul li button::before {
   font-size: 15px !important;
   color: #0f3460;
